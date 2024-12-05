@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <h1>To-Do List</h1>
+    <div class="form-container">
+      <input type="text" id="task-input" placeholder="Task name" required>
+      <input type="date" id="deadline-date" required>
+      <input type="time" id="deadline-time" required>
+      <select id="task-type">
+        <option value="work">Work</option>
+        <option value="personal">Personal</option>
+        <option value="other">Other</option>
+      </select>
+      <select id="priority-level">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button id="add-task">Add Task</button>
+    </div>
+    
+    <div class="task-list">
+      <ul id="tasks">
+        <!-- Task items will be added here -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
